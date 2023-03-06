@@ -1,0 +1,79 @@
+@theme"./colors.rasi"
+
+configuration {
+    modi: "drun";
+    font: "monospace 14";
+    sidebar-mode: false;
+}
+
+window {
+    height: 85%;
+    width: 50%;
+    border: 1px solid;
+    border-color: @winbg;
+    border-radius: 12px;
+    padding: 32px;
+    orientation: horizontal;
+}
+
+prompt {
+    background-color: inherit;
+    enabled: true;
+    padding: 0 0.6% 1% 0.5%;
+    font: "monospace 24";
+    text-color: @winbg;
+}
+
+entry {
+    placeholder: "";
+    background-color: @bg;
+    placeholder-color: @background-color;
+    padding: 0.15% 0% 0% 0%;
+}
+
+inputbar {
+    children: [entry];
+    background-color: @bg;
+    border: 0 5px solid 0 5px solid;
+    border-color: @winbg;
+    expand: false;
+    border-radius: 7px;
+    margin: 0%;
+    padding: 10px;
+}
+
+listview {
+    columns: 2;
+    padding: 1% 0 0 0;
+    spacing: 20px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+}
+
+mainbox {
+    children: [prompt,inputbar,listview];
+}
+
+element {
+    background-color: @bg;
+    border-radius: 7px;
+    orientation: vertical;
+    padding: 2% 0 2% 0;
+}
+
+element-text {
+    expand: true;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: inherit;
+}
+
+element selected {
+    background-color: @actbg;
+    border: 3px solid 0 3px solid 0;
+    border-color: @winbg;
+    border-radius: 7px;
+}
+
+/* vim:ft=css

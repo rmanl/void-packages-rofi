@@ -1,0 +1,12 @@
+/* Nordfox */
+* {
+    background-color: #2e3440;
+    bg: #20242d;
+    text-color: #e7ecf4;
+    actbg: #5a657d;
+    urgbg: #d06f79;
+    winbg: #8cafd2;
+
+}
+
+/* vim:ft=css
